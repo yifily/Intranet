@@ -7,12 +7,10 @@
 </head>
 <body>
     当前URL：<input type="text" style=" width:300px;" name="nowurl" id="nowurl"><br>
-来源URL：<input type="text" style=" width:300px;" name="fromurl" id="fromurl">
+    来源URL：<input type="text" style=" width:300px;" name="fromurl" id="fromurl">
 </body>
 <script>
-      var nowurl = document.URL;
-    var fromurl = document.referrer;
-    document.getElementById('nowurl').value = nowurl;
-    document.getElementById('fromurl').value = fromurl;
+    document.getElementById('nowurl').value = window.location.port;
+    document.getElementById('fromurl').value = window.location.host;
 </script>
 </html>
