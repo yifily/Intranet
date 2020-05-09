@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    当前URL：<input type="text" style=" width:300px;" name="nowurl" id="nowurl"><br>
+来源URL：<input type="text" style=" width:300px;" name="fromurl" id="fromurl">
+</body>
+<script>
+      var nowurl = document.URL;
+    var fromurl = document.referrer;
+    document.getElementById('nowurl').value = nowurl;
+    document.getElementById('fromurl').value = fromurl;
+</script>
+</html>
